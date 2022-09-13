@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-store';
+  btnDisabled = true;
+  person = {
+    name: 'Nicolas',
+    age: 10,
+    img: 'https://www.w3schools.com/howto/img_avatar.png'
+  }
+
+  toggleButton(){
+    this.btnDisabled = !this.btnDisabled
+  }
 }
